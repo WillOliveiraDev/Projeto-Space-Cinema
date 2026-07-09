@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Cinema</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header id="cabecalho">
+            <a href="index.html"><img class="logo-principal" src="../imagens/logo.png"></a>
+
+            <div id="pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+                <button class="botao-procurar">Procurar</button>
+                <a href="duvida.html"><img class="duvida-img" src="../imagens/duvida.png"></a>
+
+                <div id="sugestoes"></div>
+                
+            </div>
+        </header>
+
+        
+
+        <nav id="navegacao">
+
+            
+
+            <div id="carrosel">
+
+                <button class="seta seta-esquerda">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="slide-ativo">
+                     <img class="imagem-filme" src="../imagens/filmes/aranhaverso-principal.jpg">
+                     <h3>Homem-Aranha: No Aranhaverso</h3>
+                     <span>2023 . Livre . 2h20 min</span>
+                </div>
+
+                <div class="slide">
+                    <img src="../imagens/filmes/divertidamente-principal.webp">
+                    <h3>Divertidamente</h3>
+                    <span>2015 . Livre . 1h35 min</span>
+                </div>
+             
+                <div class="slide">
+                    <img src="../imagens/filmes/encanto-principal.jpg">
+                    <h3>Encanto</h3>
+                    <span>2021 . Livre . 1h42 min</span>
+                </div>
+
+                <button class="seta seta-direita">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+        </nav>
+
+
+        <main id="conteudo-principal">
+
+            <h1 class="filmes-destaque">Filmes em destaque</h1>
+
+            <div class="lista-capa">
+
+                <div class="capa">
+                    <a href="filme_1.html">
+                        <img src="../imagens/filmes/capa/encanto-capa.jpg">
+                    </a>
+                </div>
+
+                <div class="capa">
+                    <a href="filme_2.html">
+                        <img src="../imagens/filmes/capa/aranhaverso-capa.jpg">
+                    </a>
+                </div>
+
+                <div class="capa">
+                    <a href="filme_3.html">
+                        <img src="../imagens/filmes/capa/Ron-Bugado-capa.jpg">
+                    </a>
+                </div>
+
+                <div class="capa">
+                    <a href="filme_4.html">
+                        <img src="../imagens/filmes/capa/flow-capa.jpg">
+                    </a>
+                </div>
+                
+                <div class="capa">
+                    <a href="filme_5.html">
+                        <img src="../imagens/filmes/capa/como-magia-capa.webp">
+                    </a>
+                </div>
+
+                <div class="capa">
+                    <a href="filme_6.html">
+                        <img src="../imagens/filmes/capa/divertidamente-capa.jpg">
+                    </a>
+                </div>
+
+            </div>
+
+        </main>
+        
+
+        <footer id="rodape">
+            SpaceCinema.com / CNPJ: 007702400331-90 / &copy; 2026 - 
+            Copyright SpaceCinema.com
+            - todos os direitos reservados
+        </footer>
+ 
+    </div>
+
+
+    <script src="../javascript/slides.js"></script>
+
+</body>
+
+</html>

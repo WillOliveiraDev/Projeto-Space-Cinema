@@ -1,0 +1,334 @@
+/* Formtação no Geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(21, 15, 32);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*Formtação Container*/
+#container{
+    display: flex;
+    flex-flow: column;
+}
+
+/* Formatação Cabecalho */
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #9960f7, #3b1785);
+    max-height: 100px;
+}
+
+
+.logo-principal{
+    width: auto;
+    height: 160px;
+    margin-top: -25px;
+}
+
+#pesquisar{
+    position: relative;
+    flex-wrap: wrap;
+    padding: 1px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 5px;
+}
+
+#sugestoes{
+    position: absolute;
+    background-color: rgb(43, 35, 58);
+    border: 1px solid #9960f7;
+    width: 200px;
+    top: 70px;
+    right: 20px;
+    z-index: 100;
+}
+
+#sugestoes a{
+    display: block;
+    color: white;
+}
+
+#pesquisar input{
+    font-size: 13px;
+    padding: 0 4px; 
+}
+
+#pesquisar i{
+    margin-bottom: 3px;
+    font-size: 17px;
+}
+
+.botao-procurar{
+    padding: 0 10px;
+    font-size: 10px;
+    margin-bottom: 2px;
+    background-color: #38089c;
+    color: white;
+    border: 1px solid #9960f7;
+    cursor: pointer;
+}
+
+.botao-procurar:hover{
+    background-color: #9960f7;
+}
+
+.duvida-img{
+    width: auto;
+    padding: 0 7px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Formatação Navegação */
+#navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 26, 53);
+    height: 400px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#carrosel{
+    overflow: hidden;
+    position: relative;
+}
+
+#carrosel img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 900px;
+    height: 300px;
+    object-fit: cover; /*recorta a imagem sem distorcer */
+    max-height: 900px;
+}
+
+.slide{
+    display: none; /* esconde todos os slides */
+}
+
+.slide-ativo{
+   display: block;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.seta:hover{
+    background-color: rgba(86, 69, 114, 0.8);
+}
+
+.seta-esquerda{
+    left: 7px;
+}
+
+.seta-direita{
+    right: 7px;
+}
+
+/* Formatação Conteudo principal */
+#conteudo-principal{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    height: auto; 
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(35, 26, 53);
+}
+
+.capa{
+    width: 125px;
+    padding: 10px 0;
+    margin: 5px 15px;
+    flex-basis: auto;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0; /*impede que a imagem encolha */
+}
+
+.capa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa a img:hover{
+    transform: scale(1.05);
+}
+
+.filmes-destaque{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.lista-capa{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formatação Filme escolhido*/
+#conteudo-filme{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    height: auto; 
+    padding: 10px;
+    margin: 50px 0;
+    background-color: rgb(35, 26, 53);
+}
+
+
+.filme-escolhido{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info-filme{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.titulo-filme{
+    margin-top: 10px;
+}
+
+.imagem-avaliacao{
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.area-avaliacao{
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.area-avaliacao a{
+    color: rgb(226, 89, 253);
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.area-avaliacao a:hover{
+    background-color: rgb(59, 51, 75);
+    color: rgb(217, 55, 250);
+    border-radius: 10px;
+}
+
+.imagem-avaliacao img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Rodape */
+#rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(35, 26, 53);
+}
+
+@media(max-width: 576px){
+
+    .logo-principal{
+        width: auto;
+        height: 110px;
+        margin: 0 10px 20px 0;
+    }
+
+    #carrosel img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        object-fit: cover; /*recorta a imagem sem distorcer */
+        max-height: 200px;
+    }
+
+    #pesquisar input{
+        font-size: 7px;
+    }
+
+    #pesquisar i{
+        font-size: 8px;
+    }
+
+    .botao-procurar{
+        font-size: 5px;
+    }
+
+    .lista-capa{
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filme-escolhido{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px){
+
+    #carrosel img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        object-fit: cover; /*recorta a imagem sem distorcer */
+        max-height: 200px;
+    }
+}
